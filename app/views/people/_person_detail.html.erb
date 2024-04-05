@@ -1,0 +1,18 @@
+<%= turbo_frame_tag 'person_detail' do %>
+  <div>
+    <div>
+      <b>Name:</b> <%= @person&.name %>
+    </div>
+    <div>
+      <b>Email:</b> <%= @person&.email %>
+    </div>
+    <div>
+      <b>Description:</b> <%= @person&.description %>
+    </div>
+    <div>
+      <% if @person.present? %>
+        <%= link_to 'Edit', edit_person_path(@person), data: {turbo_stream: true, turbo_method: 'get'} %>
+      <% end %>
+    </div>
+  </div>
+<% end %>

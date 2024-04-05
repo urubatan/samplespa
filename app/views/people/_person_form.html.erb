@@ -1,0 +1,21 @@
+<%= turbo_frame_tag 'person_detail' do %>
+<%= form_for @person do |f|%>
+  <div>
+    <div>
+      <%= f.label :name %>
+      <%= f.text_field :name%>
+    </div>
+    <div>
+      <%= f.label :email %>
+      <%= f.text_field :email%>
+    </div>
+    <div>
+      <%= f.label :description %>
+      <%= f.rich_text_area :description %>
+    </div>
+    <div>
+      <%= f.submit %>
+    </div>
+  </div>
+<% end %>
+<% end %>

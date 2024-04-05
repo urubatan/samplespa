@@ -1,0 +1,27 @@
+body {
+  height: 100vh;
+}
+
+.people_container {
+  display: grid;
+  grid-template-columns: 200px auto;
+  height: 100%;
+  width: 100%;
+}
+
+.people_list {
+  grid-column: 1;
+  height: 100%;}
+
+.person_detail {
+  grid-column: 2;
+  height: 100%;
+}
+
+.field_with_errors {
+  border: 1px solid red;
+}
+
+.trix-button {
+  background-color: white !important;
+}
